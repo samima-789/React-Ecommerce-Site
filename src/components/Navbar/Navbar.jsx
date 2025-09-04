@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaCartShopping } from 'react-icons/fa6'
+import { FaCaretDown, FaCartShopping } from 'react-icons/fa6'
 import { IoMdSearch } from 'react-icons/io'
 import DarkMode from './DarkMode'
 
@@ -48,6 +48,12 @@ const Navbar = () => {
                     </li>
                   ))
                 }
+                <li className='relative cursore-pointer group'>
+                  <a href='$' className=''>uick links</a>
+                  <span>
+                    <FaCaretDown className='group-hover:rotate-180 duration-300'/>
+                  </span>
+                </li>
               </ul>
             </div>
           </div>
