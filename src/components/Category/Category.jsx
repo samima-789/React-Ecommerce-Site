@@ -10,10 +10,10 @@ const Category = () => {
         <div className='container'>
             <div className='grid grid-cols sm:grid-cols-2 lg:grid-cols-4 gap-8'>
                 {/* First col */}
-                <div className='py-10 pl-5 bg-gradient-to-br from-black/90 to-black/70 text-white rounded-3xl relative h-[320px] flex items-end'>
+                <div className='py-10 pl-5 bg-gradient-to-br from-black/100 to-black/50 text-white rounded-3xl relative h-[320px] flex items-end'>
                     <div>
                         <div className='mb-4'>
-                            <p className='mb-[2px] text-gray-400'>Enjoy</p>
+                            <p className='mb-[2px] text-primary'>Enjoy</p>
                             <p className='text-2xl font-semibold mb-[2px]'>With</p>
                             <p className='text-4xl xl:text-5xl font-bold opacity-20 mb-2'>Earphone</p>
                             <Button
@@ -26,12 +26,12 @@ const Category = () => {
                     <img src={Image1} alt='' className='w-[320px] absolute bottom-0'/>
                 </div>
                 {/* Second col */}
-                <div className='py-10 pl-5 bg-gradient-to-br from-brandYellow/90 to-brandYellow/70 text-white rounded-3xl relative h-[320px] flex items-end'>
+                <div className='py-10 pl-5 bg-gradient-to-br from-brandYellow/100 to-brandYellow/50 text-white rounded-3xl relative h-[320px] flex items-end'>
                     <div>
                         <div className='mb-4'>
-                            <p className='mb-[2px] text-gray-400'>Enjoy</p>
+                            <p className='mb-[2px] text-secondary'>Enjoy</p>
                             <p className='text-2xl font-semibold mb-[2px]'>With</p>
-                            <p className='text-4xl xl:text-5xl font-bold opacity-20 mb-2'>Gadget</p>
+                            <p className='text-4xl xl:text-5xl font-bold opacity-50 mb-2'>Watch</p>
                             <Button
                             text="Browse"
                             bgColor={"bg-primary"}
@@ -42,12 +42,12 @@ const Category = () => {
                     <img src={Image2} alt='' className='w-[320px] absolute top-12'/>
                 </div>
                 {/* Third col */}
-                <div className='py-10 pl-5 bg-gradient-to-br from-primary/90 to-primary/70 text-white rounded-3xl relative w-[600px] h-[320px] flex items-end'>
+                <div className='py-10 pl-5 bg-gradient-to-br from-primary/100 to-primary/50 text-white rounded-3xl relative w-[600px] h-[320px] flex items-end'>
                     <div>
                         <div className='mb-4'>
                             <p className='mb-[2px] text-gray-400'>Enjoy</p>
                             <p className='text-2xl font-semibold mb-[2px]'>With</p>
-                            <p className='text-4xl xl:text-5xl font-bold opacity-20 mb-2'>Earphone</p>
+                            <p className='text-4xl xl:text-5xl font-bold opacity-20 mb-2'>Laptop</p>
                             <Button
                             text="Browse"
                             bgColor={"bg-primary"}
@@ -55,7 +55,7 @@ const Category = () => {
                             />
                         </div>
                     </div>
-                    <img src={Image3} alt='' className='w-[320px] absolute right-10 top-5'/>
+                    <img src={Image3} alt='' className='w-[300px] absolute right-10 top-5'/>
                 </div>
             </div>
         </div>
