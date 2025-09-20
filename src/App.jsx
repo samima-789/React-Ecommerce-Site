@@ -10,7 +10,7 @@ import Banner from "./components/Banner/Banner";
 import headphone from "./assets/hero/headphone.png";
 import smartwatch2 from "./assets/category/smartwatch2-removebg-preview.png";
 
-// import Products from "./components/Products/Products";
+import Products from "./components/Products/Products";
 // import Blogs from "./components/Blogs/Blogs";
 // import Footer from "./components/Footer/Footer.jsx";
 // import Popup from "./components/Popup/Popup.jsx";
@@ -66,9 +66,9 @@ const App = () => {
       <Category2 />
       <Services />
       <Banner data={BannerData} />
+      <Products />
       <Banner data={BannerData2} />
       {/*
-      <Products />
       <Blogs />
       <Partners />
       <Footer />
