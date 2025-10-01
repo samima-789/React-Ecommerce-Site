@@ -39,7 +39,7 @@ const Blogs= () => {
                 {/* Image Section */}
                 <div className='overflow-hidden rounded-2xl mb-2'>
                   <img src={data.image} alt=''
-                  className='w-full h-[220px] object-cover'
+                  className='w-full h-[220px] object-cover rounded-2xl hover:scale-105 duration-500'
                    />
                 </div>
                 <div className='space-y-2'>

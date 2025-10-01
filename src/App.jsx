@@ -5,14 +5,14 @@ import Category from "./components/Category/Category";
 import Category2 from "./components/Category/Category2";
 import Services from "./components/Services/Services";
 import Banner from "./components/Banner/Banner";
-// import Partners from "./components/Partners/Partners.jsx";
+import Partners from "./components/Partners/Partners.jsx";
 
 import headphone from "./assets/hero/headphone.png";
 import smartwatch2 from "./assets/category/smartwatch2-removebg-preview.png";
 
 import Products from "./components/Products/Products";
 import Blogs from "./components/Blogs/Blogs";
-// import Footer from "./components/Footer/Footer.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 // import Popup from "./components/Popup/Popup.jsx";
 // import AOS from "aos";
 // import "aos/dist/aos.css";
@@ -69,9 +69,9 @@ const App = () => {
       <Products />
       <Banner data={BannerData2} />
       <Blogs />
-      {/*
       <Partners />
       <Footer />
+      {/*
       <Popup orderPopup={orderPopup} handleOrderPopup={handleOrderPopup} />} */}
     </div>
   );
