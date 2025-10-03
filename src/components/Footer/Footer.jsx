@@ -31,9 +31,27 @@ const Footer = () => {
                     <a href='#' target='_blank' className='inline-block bg-primary/90 text-white py-2 px-4 mt-4 text-sm rounded-full '>Visite Our YouTube Channel </a>
                 </div>
 
-                <div className='col-span-2 grid grid-cols-2 sm:grid-cols-3 md-pl-10'>
+                <div className='col-span-2 grid grid-cols-2 sm:grid-cols-3 md:pl-10'>
                     <div className="py-8 px-4">
                         <h1 className='text-xl font-bold sm:text-left mb-3'>Important Links</h1>
+                        <ul className='space-y-3'>
+                            {
+                                FooterLinks.map(
+                                    (data, index) => (
+                                        <li key={index}>
+                                            <a href={data.link} className='text-gqray-600 dark:text-gray-400 hover:dark:text-white hover:text-black duration-300 '>
+                                                {data.title}
+                                            </a>
+                                        </li>
+                                    )
+                                )
+                            }
+                        </ul>
+                    </div>
+
+                    <div className='col-span-2 grid grid-cols-2 sm:grid-cols-3 md:pl-10'>
+                    <div className="py-8 px-4">
+                        <h1 className='text-xl font-bold sm:text-left mb-3'>uick Links</h1>
                         <ul className='space-y-3'>
                             {
                                 FooterLinks.map(
@@ -49,24 +67,6 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-
-                <div className='col-span-2 grid grid-cols-2 sm:grid-cols-3 md-pl-10'>
-                    <div className="py-8 px-4">
-                        <h1 className='text-xl font-bold sm:text-left mb-3'>Important Links</h1>
-                        <ul className='space-y-3'>
-                            {
-                                FooterLinks.map(
-                                    (data, index) => (
-                                        <li key={index}>
-                                            <a href={data.link} className='text-gqray-600 dark:text-gray-400 hover:dark:text-white hover:text-black duration-300 '>
-                                                {data.title}
-                                            </a>
-                                        </li>
-                                    )
-                                )
-                            }
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>

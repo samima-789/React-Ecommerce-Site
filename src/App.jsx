@@ -13,9 +13,9 @@ import smartwatch2 from "./assets/category/smartwatch2-removebg-preview.png";
 import Products from "./components/Products/Products";
 import Blogs from "./components/Blogs/Blogs";
 import Footer from "./components/Footer/Footer.jsx";
-// import Popup from "./components/Popup/Popup.jsx";
-// import AOS from "aos";
-// import "aos/dist/aos.css";
+import Popup from "./components/Popup/Popup.jsx";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const BannerData = {
   discount: "30% OFF",
@@ -42,21 +42,21 @@ const BannerData2 = {
 };
 
 const App = () => {
-  // const [orderPopup, setOrderPopup] = React.useState(false);
+  const [orderPopup, setOrderPopup] = React.useState(true);
 
   const handleOrderPopup = () => {
     setOrderPopup(!orderPopup);
   };
 
-  // React.useEffect(() => {
-  //   AOS.init({
-  //     duration: 800,
-  //     easing: "ease-in-sine",
-  //     delay: 100,
-  //     offset: 100,
-  //   });
-  //   AOS.refresh();
-  // }, []);
+  React.useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-sine",
+      delay: 100,
+      offset: 100,
+    });
+    AOS.refresh();
+  }, []);
 
   return (
     <div className="bg-white dark:bg-gray-900 dark:text-white duration-200 overflow-hidden">
@@ -71,8 +71,7 @@ const App = () => {
       <Blogs />
       <Partners />
       <Footer />
-      {/*
-      <Popup orderPopup={orderPopup} handleOrderPopup={handleOrderPopup} />} */}
+      <Popup orderPopup={orderPopup} handleOrderPopup={handleOrderPopup} />
     </div>
   );
 };

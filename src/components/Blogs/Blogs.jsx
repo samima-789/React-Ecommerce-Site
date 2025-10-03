@@ -10,18 +10,21 @@ const BlogData = [
     subtitle: "lorem itsem hds  go jkutr minimal gojybc bukmol cxaujn jhgf rciuyt joljnhf ff hio",
     published:"Jan 20, 2025 by Dilshed",
     image: Img1,
+    aosDelay:'0'
   },
   {
     title:"How to choose perfect smartwatch",
     subtitle: "lorem itsem hds  go jkutr minimal gojybc bukmol cxaujn jhgf rciuyt joljnhf ff hio",
     published:"Jan 20, 2025 by Dilshed",
     image: Img2,
+    aosDelay:'200'
   },
   {
     title:"How to choose perfect smartwatch",
     subtitle: "lorem itsem hds  go jkutr minimal gojybc bukmol cxaujn jhgf rciuyt joljnhf ff hio",
     published:"Jan 20, 2025 by Dilshed",
     image: Img3,
+    aosDelay:'400'
   },
 ]
 
@@ -35,7 +38,10 @@ const Blogs= () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 gap-y-8 sm:gap-4 md:gap-7">
           {
             BlogData.map((data) =>(
-              <div key={data.title} className='bg-white dark:bg-gray-900'>
+              <div
+              data-aos='fade-up'
+              data-aos-delay={data.aosDelay} 
+              key={data.title} className='bg-white dark:bg-gray-900'>
                 {/* Image Section */}
                 <div className='overflow-hidden rounded-2xl mb-2'>
                   <img src={data.image} alt=''
